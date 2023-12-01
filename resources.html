@@ -47,20 +47,18 @@
 
             .hospital {
                 display: flex;
-                justify-content: center;
+                align-items: center;
                 margin-top: 50px;
-                
-                /* align-items: flex-end; */
-               /* left:50%  */
+                flex-direction: column;
             }
 
-            .image1 {
+            .image {
                 height: 150px;
                 width: 150px;
             }
 
-            .button1 {
-
+            .button {
+                width:250px;
             }
         </style>
     </head>
@@ -82,8 +80,8 @@
             </div>
         </div>
         <div class="hospital">
-            <img class="image1" src="images/hospital.png">
-            <button>Local Hospitals and Therapist Offices</button>
+            <img class="image" src="images/hospital.png">
+            <button class="button">Local Hospitals and Therapist Offices</button>
         </div>
     </body>
 </html>
