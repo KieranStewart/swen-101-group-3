@@ -7,9 +7,15 @@ p {
 }
 
 .menuBarLink {
-    color:pink;
+    color:rgb(0, 0, 0);
 }
 
 .header {
     color: darkblue;
+}
+
+.headerBox {
+    background-color: pink;
+    width: auto;
+    margin: 0 auto;
 }
