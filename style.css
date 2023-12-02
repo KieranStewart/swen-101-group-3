@@ -1,0 +1,21 @@
+p {
+    color: rgb(154, 31, 35);
+}
+
+.highlight {
+    color:darkgoldenrod;
+}
+
+.menuBarLink {
+    color:rgb(0, 0, 0);
+}
+
+.header {
+    color: rgb(32, 32, 32);
+}
+
+.headerBox {
+    background-color: pink;
+    width: auto;
+    margin: 0 auto;
+}
