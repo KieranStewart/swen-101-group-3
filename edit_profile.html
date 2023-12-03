@@ -57,6 +57,8 @@
 
     <div class="edit-profile-box">
         <h1>Edit Profile and Settings</h1>
+
+        <form action="/submit-profile" method="post">
     
 	<button class="edit-user-button" onclick=toggleOptions()>Edit User Settings</button>
 	
@@ -104,6 +106,10 @@
 	    <button type="reset">Clear</button>
         </form>
     </div>
+<script>
+        function saveProfile() {
+        	window.location.href = "https://kieranstewart.github.io/swen-101-group-3/profile.html";}
+    </script>
 
 </body>
 </html>
