@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <style>
+        body {
+            font-family: Maven Pro, sans-serif;
+	    color: #b9c9d7;
+            background-color: #d9d2e9ff;
+            margin: 0;
+            padding: 20px;}
+
+        .edit-profile-box {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+	    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);}
+
+        labels {
+            display: block;
+            margin-bottom: 5px;}
+
+        input {
+	    color: #797979;
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;}
+        form {
+            margin-top: 20px;}
+
+        button {
+            padding: 10px;
+            background-color: #b9c9d7;
+            color: #ffffff;
+            border: 2px solid #b9c9d7;
+            border-radius: 4px;
+            cursor: pointer;}
+	.edit-user-button {
+	    padding: 10px;
+            background-color: #b9c9d7;
+            color: #ffffff;
+            border: 2px solid #b9c9d7;
+            border-radius: 4px;
+            cursor: pointer;}
+	.edit-user {
+            display: none;
+            margin-top: 10px;}
+
+    </style>
+</head>
+<body>
+
+    <div class="edit-profile-box">
+        <h1>Edit Profile and Settings</h1>
+
+        <form action="/submit-profile" method="post">
+    
+	<button class="edit-user-button" onclick=toggleOptions()>Edit User Settings</button>
+	
+	<div class="edit-user" id="editUser">
+	    <label for="username">Username:</label>
+		<input type="text" id="username" name="username" 
+		 placeholder="Your Username">
+	    <label for="password">Password:</label>
+		<input type="text" id="password" name="password" 
+		 placeholder="Enter a Password">
+		<input type="password" id="cpassword" name="cpassword" 
+		 placeholder="Confirm Your Password">
+    </div class="edit-user">
+    <script>
+        function toggleOptions() {
+            var optionsDiv = document.getElementById("editUser");
+            optionsDiv.style.display = (optionsDiv.style.display === "none") ? "block" : "none";
+        }
+    </script>
+
+    <div class="edit-profile">
+            <label for="name">Name:</label>
+            	<input type="text" id="name" name="name" 
+		 placeholder="Your Name" required>
+
+            <label for="DOB">Birthday:</label>
+            	<input type="date" id="DOB" name="DOB">
+
+	    <label for="phone-number">Phone Number:</label>
+		<input type="tel" id="phone-number" name="phone-number" 
+		 placeholder="Enter Your Phone Number" required>
+
+            <label for="email">Email:</label>
+            	<input type="email" id="email" name="email" 				 placeholder="Your Email" required>
+
+            <label for="address">Primary Address:</label>
+            	<input type="text" id="street" name="street"
+	         placeholder="Street Address" required>
+	    	<input type="text" id="citystate" name="citystate"
+	         placeholder="City, State, Zip Code" required>
+	    	<input type="text" id="apt" name="apt"
+	         placeholder="Apartment number (if applicable)">
+
+            <button type="submit">Save Profile</button>
+	    <button type="reset">Clear</button>
+        </form>
+    </div>
+
+</body>
+</html>
