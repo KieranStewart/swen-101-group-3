@@ -7,26 +7,42 @@
     <style>
         body {
             font-family: 'Maven Pro', sans-serif;
-            color: #b9c9d7;
             background-color: #d9d2e9ff;
             margin: 0;
             padding: 20px;}
+            
+        .pfp {
+        	position: absolute;
+        	top: -55%;
+            left:70%;}
 
         .profile-card1 {
+        	position: relative;
+        	color: #fff5ec;
             max-width: 800px;
             margin: 0 auto;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);}
+            background-color: #a5bbd6;
+            padding: 20px;}
 
         .profile-card2 {
+        	position: relative;
+        	color: #a5bbd6;
             max-width: 800px;
-            margin: 20px auto;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);}
+            margin: 0px auto;
+            background-color: #fff5ec;
+            padding: 20px;}
+            
+        .pfp img {
+            width: 250px;
+            height: auto;}
+            
+        button {
+            padding: 10px;
+            background-color: #b9c9d7;
+            color: #ffffff;
+            border: 2px solid #b9c9d7;
+            border-radius: 4px;
+            cursor: pointer;}
     </style>
 </head>
 <body>
@@ -34,14 +50,19 @@
         <h1>User</h1>
         <p>Username: "JDoe100"
         <p>Name: "John Doe"
+        
     </div>
     <div class="profile-card2" id="profile2">
         <p>Email: "john.doe100@rit.edu"
         <p>Phone: "(420) 316-0006"
         <p>Address: "1 Lomb Memorial Drive"
 <p>
-        <a href="https://kieranstewart.github.io/swen-101-group-3/edit_profile.html" class="edit-profile-link">Edit Profile</a>
+        <button class="edit-profile-button" onclick="window.location.href='https://kieranstewart.github.io/swen-101-group-3/edit_profile.html'">Edit Profile</button>
+	<div class="pfp" id="pfp">
+    		<img src=https://kieranstewart.github.io/swen-101-group-3/images/igaveuponprofile.png alt="Profile Picture">
+        </div>
     </div>
+    
     </script>
 </body>
 </html>
