@@ -58,7 +58,7 @@
     <div class="edit-profile-box">
         <h1>Edit Profile and Settings</h1>
 
-        <form action="/submit-profile" method="post">
+        <form action="/submit-profile" method="get">
     
 	<button class="edit-user-button" onclick=toggleOptions()>Edit User Settings</button>
 	
@@ -102,7 +102,7 @@
 	    	<input type="text" id="apt" name="apt"
 	         placeholder="Apartment number (if applicable)">
 
-            <button type="submit">Save Profile</button>
+	    <button type="button" onclick="window.location.href='https://kieranstewart.github.io/swen-101-group-3/profile.html'">Save Profile</button>
 	    <button type="reset">Clear</button>
         </form>
     </div>
