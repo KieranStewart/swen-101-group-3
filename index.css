@@ -1,0 +1,23 @@
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.title {
+    font-size: xxx-large;
+    align-self: center;
+}
+
+.button {
+    font-size: xx-large;
+    padding: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
