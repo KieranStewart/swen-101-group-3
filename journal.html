@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+    <title>MindfulCare Home</title>
+    <link href="global_style.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+    }
+
+    .journal-container {
+        background-color: #fff;
+        /* Set your desired background color */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 60%;
+        /* Adjust the width as needed */
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 100%;
+        /* Make the text box full-width */
+        font-size: 16px;
+        height: 200px;
+        resize: none;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button {
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #3498db;
+        /* Set button background color */
+        color: #fff;
+        /* Set button text color */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<body>
+
+    <div class="header">
+    <div class="dropdown">
+        <button class="dropdownButton">
+            <img class="headerImage" src="images/MindfulCare.png" alt="Dropdown button for page navigation">
+        </button>
+        <div class="dropdownOptions">
+            <a href>Home</a>
+            <a href>Profile</a>
+            <a href>Journal</a>
+            <a href="resources.html">Resources</a>
+            <a href="libraryresources.html">Library</a>
+            <a href>Events</a>
+            <a href>Calendar</a>
+        </div>
+    </div>
+</div>
+<div class="title">
+    <h1>Journal</h1>
+</div>
+<div class="container">
+    <div class="journal-container">
+        <form>
+            <label for="myTextArea">Enter Today's Entry:</label>
+            <br>
+            <textarea id="myTextArea" name="myTextArea" placeholder="Type your text here..."></textarea>
+        </form>
+    </div><div class="buttons-container">
+        <button class="button">Save</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <!-- Add more rows for other weeks in the month -->
+            </tbody>
+        </table>
+    </div>
+</div>
