@@ -1,0 +1,48 @@
+body {
+    background-color: #c1d6ba;
+}
+
+.header {
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+.headerImage {
+    height: 100px;
+    width: auto;
+}
+
+.dropdown { /* outer div containing the button and options for a dropdown */
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownButton {
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdownOptions { /* when hovering over the button, display the options */
+    display: block;
+}
+
+.dropdownOptions { /* div containing the options a dropdown reveals */
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    :hover { /* applies when hovered over */
+        background-color: #ddd;
+    }
+
+    & a { /* applies to <a> tags inside options */
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+}
