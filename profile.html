@@ -10,23 +10,31 @@
             background-color: #d9d2e9ff;
             margin: 0;
             padding: 20px;}
-            
-        .pfp {
-        	position: absolute;
-        	top: -55%;
-            left:70%;}
 
-        .profile-card1 {
-        	position: relative;
-        	color: #fff5ec;
+	.profile-card-container {
             max-width: 800px;
             margin: 0 auto;
-            background-color: #a5bbd6;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+	    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);}
+            
+        .pfp {
+            position: absolute;
+            top: -55%;
+            left:67%;}
+
+        .profile-card1 {
+            position: relative;
+            color: #fff5ec;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #b9c9d7;
             padding: 20px;}
 
         .profile-card2 {
-        	position: relative;
-        	color: #a5bbd6;
+            position: relative;
+            color: #b9c9d7;
             max-width: 800px;
             margin: 0px auto;
             background-color: #fff5ec;
@@ -46,23 +54,24 @@
     </style>
 </head>
 <body>
-    <div class="profile-card1" id="profile1">
-        <h1>User</h1>
-        <p>Username: "JDoe100"
-        <p>Name: "John Doe"
+    <div class="profile-card-container" id="container">
+	
+    	<div class="profile-card1" id="profile1">
+        	<h1>User</h1>
+        	<p>Username: "JDoe100"
+        	<p>Name: "John Doe"
         
+    	</div>
+	<div class="profile-card2" id="profile2">
+        	<p>Email: "john.doe100@rit.edu"
+        	<p>Phone: "(420) 316-0006"
+        	<p>Address: "1 Lomb Memorial Drive"
+		
+        	<p><button class="edit-profile-button" onclick="window.location.href='https://kieranstewart.github.io/swen-101-group-3/edit_profile.html'">Edit Profile</button>
+		<div class="pfp" id="pfp">
+    			<img src=https://kieranstewart.github.io/swen-101-group-3/images/igaveuponprofile.png alt="Profile Picture">
+        	</div>
+	</div>
     </div>
-    <div class="profile-card2" id="profile2">
-        <p>Email: "john.doe100@rit.edu"
-        <p>Phone: "(420) 316-0006"
-        <p>Address: "1 Lomb Memorial Drive"
-<p>
-        <button class="edit-profile-button" onclick="window.location.href='https://kieranstewart.github.io/swen-101-group-3/edit_profile.html'">Edit Profile</button>
-	<div class="pfp" id="pfp">
-    		<img src=https://kieranstewart.github.io/swen-101-group-3/images/igaveuponprofile.png alt="Profile Picture">
-        </div>
-    </div>
-    
-    </script>
 </body>
 </html>
